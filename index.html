@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SoundProject — музыка, которую делают рядом</title>
-    <meta name="description" content="SoundProject — платформа для независимых артистов и слушателей.">
+    <title>SoundProject — Главная</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
@@ -26,8 +25,8 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-                        <li class="nav-item"><a class="nav-link" href="product.html">Трек</a></li>
-                        <li class="nav-item"><a class="nav-link" href="order.html">Избранное</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                     </ul>
                     <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#uploadModal">
                         <i class="bi bi-plus-lg"></i> Загрузить
@@ -41,10 +40,10 @@
                 <div class="row align-items-center g-5">
                     <div class="col-12 col-lg-6">
                         <h1 id="heroTitle" class="display-4 mb-3">Музыка, которую делают рядом с вами</h1>
-                        <p class="lead mb-4">Слушайте новых артистов, сохраняйте любимое и выкладывайте свои треки за минуту.</p>
+                        <p class="lead mb-4">Слушайте новых артистов, делитесь релизами и открывайте свежий звук каждый день.</p>
                         <div class="d-flex flex-wrap gap-2">
                             <button class="btn btn-accent btn-lg" type="button" id="heroPlay"><i class="bi bi-play-fill"></i> Включить тренд</button>
-                            <a class="btn btn-outline-light btn-lg" href="catalog.html">Открыть каталог</a>
+                            <a class="btn btn-outline-light btn-lg" href="catalog.html">Перейти в каталог</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -66,36 +65,29 @@
             </div>
         </section>
 
-        <section class="py-5 bg-white" aria-labelledby="newTitle">
+        <section class="py-5 bg-white" aria-labelledby="perkTitle">
             <div class="container">
-                <h2 id="newTitle" class="h3 mb-4">Новые релизы</h2>
-                <div class="row g-4" id="releases"></div>
-            </div>
-        </section>
-
-        <section class="py-5" aria-labelledby="perkTitle">
-            <div class="container">
-                <h2 id="perkTitle" class="h3 mb-4">Зачем нужен SoundProject</h2>
+                <h2 id="perkTitle" class="h3 mb-4">Почему выберут SoundProject</h2>
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <article class="h-100">
+                        <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-cloud-arrow-up fs-2 text-danger"></i>
                             <h3 class="h5 mt-2">Загрузка за минуту</h3>
-                            <p class="text-secondary">Название, жанр, файл и обложка. Трек сразу появляется в каталоге.</p>
+                            <p class="text-secondary mb-0">Загружайте свои треки и мгновенно делитесь ими с аудиторией.</p>
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <article class="h-100">
+                        <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-heart fs-2 text-danger"></i>
                             <h3 class="h5 mt-2">Своя медиатека</h3>
-                            <p class="text-secondary">Лайки сохраняются в браузере и собираются на странице «Избранное».</p>
+                            <p class="text-secondary mb-0">Сохраняйте любимые релизы в один клик и формируйте свой плейлист.</p>
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <article class="h-100">
+                        <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-headphones fs-2 text-danger"></i>
-                            <h3 class="h5 mt-2">Плеер всегда с вами</h3>
-                            <p class="text-secondary">Музыка не прерывается, пока вы выбираете следующий трек.</p>
+                            <h3 class="h5 mt-2">Удобный плеер</h3>
+                            <p class="text-secondary mb-0">Непрерывное воспроизведение при переходе по всем страницам сайта.</p>
                         </article>
                     </div>
                 </div>
@@ -103,14 +95,30 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-light py-4">
-        <div class="container d-flex flex-wrap justify-content-between gap-2">
-            <span><i class="bi bi-soundwave text-danger"></i> SoundProject</span>
-            <small class="text-secondary">Учебный проект КР №2, Bootstrap 5</small>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row gy-3 align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="fw-bold mb-0"><i class="bi bi-soundwave text-danger"></i> SoundProject</h5>
+                </div>
+                <div class="col-md-8 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-3"><a href="index.html" class="text-light text-decoration-none">Главная</a></li>
+                        <li class="list-inline-item me-3"><a href="catalog.html" class="text-light text-decoration-none">Каталог</a></li>
+                        <li class="list-inline-item me-3"><a href="about.html" class="text-light text-decoration-none">О нас</a></li>
+                        <li class="list-inline-item"><a href="contacts.html" class="text-light text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="row">
+                <div class="col text-center text-muted small">
+                    &copy; 2026 SoundProject. Все права защищены.
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Модальное окно загрузки -->
     <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -148,15 +156,6 @@
                             <input type="file" class="form-control" id="upAudio" accept="audio/*" required>
                             <div class="invalid-feedback">Прикрепите аудиофайл.</div>
                         </div>
-                        <div class="mb-3">
-                            <label for="upCover" class="form-label">Обложка</label>
-                            <input type="file" class="form-control" id="upCover" accept="image/*">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="upRights" required>
-                            <label class="form-check-label" for="upRights">У меня есть права на этот трек</label>
-                            <div class="invalid-feedback">Подтвердите права на трек.</div>
-                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
@@ -167,14 +166,12 @@
         </div>
     </div>
 
-    <!-- Уведомление -->
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:1090">
         <div id="appToast" class="toast text-bg-dark" role="status" aria-live="polite" aria-atomic="true">
             <div class="toast-body"></div>
         </div>
     </div>
 
-    <!-- Нижний плеер -->
     <aside class="global-player" id="globalPlayer" aria-label="Плеер">
         <div class="container">
             <div class="row align-items-center g-3">
@@ -202,16 +199,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script>
-  document.addEventListener('sp:ready', () => {
-    const draw = () => {
-      const list = SP.allTracks();
-      SP.renderCards('#trending', list.slice(0, 3), 'col-12 col-md-6 col-lg-4');
-      SP.renderCards('#releases', list.slice(-4).reverse(), 'col-12 col-md-6 col-lg-3');
-    };
-    draw();
-    document.addEventListener('tracks:changed', draw);
-    document.getElementById('heroPlay').addEventListener('click', () => SP.playTrack(1));
-  });
+        document.addEventListener('sp:ready', () => {
+            const draw = () => {
+                const list = SP.allTracks();
+                SP.renderCards('#trending', list.slice(0, 3), 'col-12 col-md-6 col-lg-4');
+            };
+            draw();
+            document.addEventListener('tracks:changed', draw);
+            document.getElementById('heroPlay').addEventListener('click', () => SP.playTrack(1));
+        });
     </script>
 </body>
 </html>
