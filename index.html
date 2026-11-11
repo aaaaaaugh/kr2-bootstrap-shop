@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SoundProject — Главная</title>
+    <title>SoundProject — Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
@@ -14,22 +14,22 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Основная навигация">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main Navigation">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><i class="bi bi-soundwave"></i> SoundProject</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                        aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
                     </ul>
                     <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                        <i class="bi bi-plus-lg"></i> Загрузить
+                        <i class="bi bi-plus-lg"></i> Upload
                     </button>
                 </div>
             </div>
@@ -39,11 +39,11 @@
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-12 col-lg-6">
-                        <h1 id="heroTitle" class="display-4 mb-3">Музыка, которую делают рядом с вами</h1>
-                        <p class="lead mb-4">Слушайте новых артистов, делитесь релизами и открывайте свежий звук каждый день.</p>
+                        <h1 id="heroTitle" class="display-4 mb-3">Music Created Right Next to You</h1>
+                        <p class="lead mb-4">Discover independent artists, share releases, and explore fresh sounds every single day.</p>
                         <div class="d-flex flex-wrap gap-2">
-                            <button class="btn btn-accent btn-lg" type="button" id="heroPlay"><i class="bi bi-play-fill"></i> Включить тренд</button>
-                            <a class="btn btn-outline-light btn-lg" href="catalog.html">Перейти в каталог</a>
+                            <button class="btn btn-accent btn-lg" type="button" id="heroPlay"><i class="bi bi-play-fill"></i> Play Trending</button>
+                            <a class="btn btn-outline-light btn-lg" href="catalog.html">Explore Catalog</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -58,8 +58,8 @@
         <section class="py-5" aria-labelledby="trendTitle">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-end mb-4">
-                    <h2 id="trendTitle" class="h3 mb-0">Тренды недели</h2>
-                    <a href="catalog.html" class="link-dark fw-semibold">Все треки</a>
+                    <h2 id="trendTitle" class="h3 mb-0">Trending This Week</h2>
+                    <a href="catalog.html" class="link-dark fw-semibold">View All</a>
                 </div>
                 <div class="row g-4" id="trending"></div>
             </div>
@@ -67,27 +67,27 @@
 
         <section class="py-5 bg-white" aria-labelledby="perkTitle">
             <div class="container">
-                <h2 id="perkTitle" class="h3 mb-4">Почему выберут SoundProject</h2>
+                <h2 id="perkTitle" class="h3 mb-4">Why Choose SoundProject</h2>
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-cloud-arrow-up fs-2 text-danger"></i>
-                            <h3 class="h5 mt-2">Загрузка за минуту</h3>
-                            <p class="text-secondary mb-0">Загружайте свои треки и мгновенно делитесь ими с аудиторией.</p>
+                            <h3 class="h5 mt-2">Instant Uploads</h3>
+                            <p class="text-secondary mb-0">Upload your original tracks and instantly share them with an active audience.</p>
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-heart fs-2 text-danger"></i>
-                            <h3 class="h5 mt-2">Своя медиатека</h3>
-                            <p class="text-secondary mb-0">Сохраняйте любимые релизы в один клик и формируйте свой плейлист.</p>
+                            <h3 class="h5 mt-2">Personal Library</h3>
+                            <p class="text-secondary mb-0">Save your favorite tracks with a single click to build your custom playlist.</p>
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <article class="h-100 p-4 border rounded-3 bg-light">
                             <i class="bi bi-headphones fs-2 text-danger"></i>
-                            <h3 class="h5 mt-2">Удобный плеер</h3>
-                            <p class="text-secondary mb-0">Непрерывное воспроизведение при переходе по всем страницам сайта.</p>
+                            <h3 class="h5 mt-2">Continuous Player</h3>
+                            <p class="text-secondary mb-0">Uninterrupted playback while navigating across all pages of the platform.</p>
                         </article>
                     </div>
                 </div>
@@ -103,17 +103,17 @@
                 </div>
                 <div class="col-md-8 text-center text-md-end">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item me-3"><a href="index.html" class="text-light text-decoration-none">Главная</a></li>
-                        <li class="list-inline-item me-3"><a href="catalog.html" class="text-light text-decoration-none">Каталог</a></li>
-                        <li class="list-inline-item me-3"><a href="about.html" class="text-light text-decoration-none">О нас</a></li>
-                        <li class="list-inline-item"><a href="contacts.html" class="text-light text-decoration-none">Контакты</a></li>
+                        <li class="list-inline-item me-3"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li class="list-inline-item me-3"><a href="catalog.html" class="text-light text-decoration-none">Catalog</a></li>
+                        <li class="list-inline-item me-3"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="list-inline-item"><a href="contacts.html" class="text-light text-decoration-none">Contacts</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="my-3 border-secondary">
             <div class="row">
                 <div class="col text-center text-muted small">
-                    &copy; 2026 SoundProject. Все права защищены.
+                    &copy; 2026 SoundProject. All rights reserved.
                 </div>
             </div>
         </div>
@@ -124,24 +124,22 @@
             <div class="modal-content">
                 <form id="uploadForm" novalidate>
                     <div class="modal-header">
-                        <h2 class="modal-title h5" id="uploadModalLabel">Загрузить трек</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        <h2 class="modal-title h5" id="uploadModalLabel">Upload Track</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="upTitle" class="form-label">Название</label>
+                            <label for="upTitle" class="form-label">Track Title</label>
                             <input type="text" class="form-control" id="upTitle" required minlength="2">
-                            <div class="invalid-feedback">Введите название, минимум 2 символа.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="upArtist" class="form-label">Артист</label>
+                            <label for="upArtist" class="form-label">Artist Name</label>
                             <input type="text" class="form-control" id="upArtist" required>
-                            <div class="invalid-feedback">Укажите имя артиста.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="upGenre" class="form-label">Жанр</label>
+                            <label for="upGenre" class="form-label">Genre</label>
                             <select class="form-select" id="upGenre" required>
-                                <option value="" selected disabled>Выберите жанр</option>
+                                <option value="" selected disabled>Select Genre</option>
                                 <option>Electronic</option>
                                 <option>Lo-Fi</option>
                                 <option>Hip-Hop</option>
@@ -149,17 +147,15 @@
                                 <option>Rock</option>
                                 <option>Ambient</option>
                             </select>
-                            <div class="invalid-feedback">Выберите жанр.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="upAudio" class="form-label">Аудиофайл</label>
+                            <label for="upAudio" class="form-label">Audio File</label>
                             <input type="file" class="form-control" id="upAudio" accept="audio/*" required>
-                            <div class="invalid-feedback">Прикрепите аудиофайл.</div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
-                        <button type="submit" class="btn btn-accent">Опубликовать</button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-accent">Publish</button>
                     </div>
                 </form>
             </div>
@@ -172,25 +168,25 @@
         </div>
     </div>
 
-    <aside class="global-player" id="globalPlayer" aria-label="Плеер">
+    <aside class="global-player" id="globalPlayer" aria-label="Music Player">
         <div class="container">
             <div class="row align-items-center g-3">
                 <div class="col-6 col-md-3">
-                    <div class="player-title text-truncate" id="playerTitle">Выберите трек</div>
+                    <div class="player-title text-truncate" id="playerTitle">Select a track</div>
                     <div class="small text-secondary text-truncate" id="playerArtist">SoundProject</div>
                 </div>
                 <div class="col-6 col-md-3 d-flex justify-content-end justify-content-md-start gap-1">
-                    <button class="btn" type="button" id="pPrev" aria-label="Предыдущий"><i class="bi bi-skip-start-fill fs-4"></i></button>
-                    <button class="btn" type="button" id="pToggle" aria-label="Играть или пауза"><i class="bi bi-play-fill fs-4"></i></button>
-                    <button class="btn" type="button" id="pNext" aria-label="Следующий"><i class="bi bi-skip-end-fill fs-4"></i></button>
+                    <button class="btn" type="button" id="pPrev" aria-label="Previous"><i class="bi bi-skip-start-fill fs-4"></i></button>
+                    <button class="btn" type="button" id="pToggle" aria-label="Play or Pause"><i class="bi bi-play-fill fs-4"></i></button>
+                    <button class="btn" type="button" id="pNext" aria-label="Next"><i class="bi bi-skip-end-fill fs-4"></i></button>
                 </div>
                 <div class="col-12 col-md-4">
-                    <input type="range" class="form-range" id="pProgress" min="0" max="100" step="0.1" value="0" aria-label="Перемотка">
+                    <input type="range" class="form-range" id="pProgress" min="0" max="100" step="0.1" value="0" aria-label="Seek progress">
                     <div class="player-time" id="pTime">0:00 / 0:00</div>
                 </div>
                 <div class="d-none d-md-flex col-md-2 align-items-center gap-2">
                     <i class="bi bi-volume-up"></i>
-                    <input type="range" class="form-range" id="pVolume" min="0" max="100" value="80" aria-label="Громкость">
+                    <input type="range" class="form-range" id="pVolume" min="0" max="100" value="80" aria-label="Volume">
                 </div>
             </div>
         </div>
