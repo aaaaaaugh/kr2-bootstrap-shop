@@ -13,203 +13,235 @@
 </head>
 <body>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Основная навигация">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="bi bi-soundwave"></i> SoundProject</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-              aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
-        </ul>
-        <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#uploadModal">
-          <i class="bi bi-plus-lg"></i> Загрузить
-        </button>
-      </div>
-    </div>
-  </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Основная навигация">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="bi bi-soundwave"></i> SoundProject</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                        <i class="bi bi-plus-lg"></i> Загрузить
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<main class="container py-5">
-  <h1 class="h2 mb-4">Связаться с нами</h1>
+    <main class="container py-5">
+        <h1 class="h2 mb-4">Связаться с нами</h1>
 
-  <div class="row g-5">
-    <div class="col-12 col-lg-7">
-      <div class="bg-white p-4 rounded-4 shadow-sm">
-        <h2 class="h4 mb-3">Напишите нам сообщение</h2>
-        <div class="alert alert-success d-none" id="contactOk" role="status">Сообщение успешно отправлено! Мы ответим вам в ближайшее время.</div>
-        
-        <form id="contactForm" novalidate>
-          <div class="mb-3">
-            <label for="cName" class="form-label">Ваше имя</label>
-            <input type="text" class="form-control" id="cName" required>
-            <div class="invalid-feedback">Пожалуйста, укажите ваше имя.</div>
-          </div>
-          <div class="mb-3">
-            <label for="cEmail" class="form-label">Email для связи</label>
-            <input type="email" class="form-control" id="cEmail" required placeholder="name@example.com">
-            <div class="invalid-feedback">Введите корректный email.</div>
-          </div>
-          <div class="mb-3">
-            <label for="cMessage" class="form-label">Сообщение</label>
-            <textarea class="form-control" id="cMessage" rows="4" required minlength="5" placeholder="Опишите ваш вопрос или предложение..."></textarea>
-            <div class="invalid-feedback">Напишите текст сообщения (минимум 5 символов).</div>
-          </div>
-          <button class="btn btn-accent btn-lg" type="submit">Отправить сообщение</button>
-        </form>
-      </div>
-    </div>
+        <div class="row g-5">
+            <div class="col-12 col-lg-7">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h2 class="h4 mb-3">Напишите нам сообщение</h2>
+                    <div class="alert alert-success d-none" id="contactOk" role="status">Сообщение успешно отправлено! Мы ответим вам в ближайшее время.</div>
 
-    <div class="col-12 col-lg-5">
-      <div class="bg-white p-4 rounded-4 shadow-sm h-100">
-        <h2 class="h4 mb-4">Контактная информация</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="cName" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="cName" required>
+                            <div class="invalid-feedback">Пожалуйста, укажите ваше имя.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cEmail" class="form-label">Email для связи</label>
+                            <input type="email" class="form-control" id="cEmail" required placeholder="name@example.com">
+                            <div class="invalid-feedback">Введите корректный email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cMessage" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="cMessage" rows="4" required minlength="5" placeholder="Опишите ваш вопрос или предложение..."></textarea>
+                            <div class="invalid-feedback">Напишите текст сообщения (минимум 5 символов).</div>
+                        </div>
+                        <button class="btn btn-accent btn-lg" type="submit">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
 
-        <div class="d-flex align-items-start gap-3 mb-4">
-          <div class="bg-light p-3 rounded-circle text-danger">
-            <i class="bi bi-envelope fs-4"></i>
-          </div>
-          <div>
-            <h3 class="h6 mb-1 text-secondary">Электронная почта</h3>
-            <p class="fw-bold mb-0">support@soundproject.test</p>
-          </div>
+            <div class="col-12 col-lg-5">
+                <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                    <h2 class="h4 mb-4">Контактная информация</h2>
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="bg-light p-3 rounded-circle text-danger">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h6 mb-1 text-secondary">Электронная почта</h3>
+                            <p class="fw-bold mb-0">support@soundproject.test</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="bg-light p-3 rounded-circle text-danger">
+                            <i class="bi bi-telephone fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h6 mb-1 text-secondary">Телефон</h3>
+                            <p class="fw-bold mb-0">+7 (800) 555-35-35</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h3 class="h6 mb-3 text-secondary">Мы в соцсетях</h3>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-vk"></i></a>
+                        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="d-flex align-items-start gap-3 mb-4">
-          <div class="bg-light p-3 rounded-circle text-danger">
-            <i class="bi bi-telephone fs-4"></i>
-          </div>
-          <div>
-            <h3 class="h6 mb-1 text-secondary">Телефон</h3>
-            <p class="fw-bold mb-0">+7 (800) 555-35-35</p>
-          </div>
+    
+
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form id="uploadForm" novalidate>
+                    <div class="modal-header">
+                        <h2 class="modal-title h5" id="uploadModalLabel">Загрузить трек</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="upTitle" class="form-label">Название</label>
+                            <input type="text" class="form-control" id="upTitle" required minlength="2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="upArtist" class="form-label">Артист</label>
+                            <input type="text" class="form-control" id="upArtist" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="upGenre" class="form-label">Жанр</label>
+                            <select class="form-select" id="upGenre" required>
+                                <option value="" selected disabled>Выберите жанр</option>
+                                <option>Electronic</option>
+                                <option>Lo-Fi</option>
+                                <option>Hip-Hop</option>
+                                <option>Pop</option>
+                                <option>Rock</option>
+                                <option>Ambient</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="upAudio" class="form-label">Аудиофайл</label>
+                            <input type="file" class="form-control" id="upAudio" accept="audio/*" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-accent">Опубликовать</button>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
 
-        <hr class="my-4">
-
-        <h3 class="h6 mb-3 text-secondary">Мы в соцсетях</h3>
-        <div class="d-flex gap-2">
-          <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-telegram"></i></a>
-          <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-vk"></i></a>
-          <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" style="width:38px;height:38px"><i class="bi bi-youtube"></i></a>
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:1090">
+        <div id="appToast" class="toast text-bg-dark" role="status" aria-live="polite" aria-atomic="true">
+            <div class="toast-body"></div>
         </div>
-      </div>
     </div>
-  </div>
-</main>
 
-<footer class="bg-dark text-light py-4 mt-5">
-  <div class="container">
-    <div class="row gy-3 align-items-center">
-      <div class="col-md-4 text-center text-md-start">
-        <h5 class="fw-bold mb-0"><i class="bi bi-soundwave text-danger"></i> SoundProject</h5>
-      </div>
-      <div class="col-md-8 text-center text-md-end">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item me-3"><a href="index.html" class="text-light text-decoration-none">Главная</a></li>
-          <li class="list-inline-item me-3"><a href="catalog.html" class="text-light text-decoration-none">Каталог</a></li>
-          <li class="list-inline-item me-3"><a href="about.html" class="text-light text-decoration-none">О нас</a></li>
-          <li class="list-inline-item"><a href="contacts.html" class="text-light text-decoration-none">Контакты</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr class="my-3 border-secondary">
-    <div class="row">
-      <div class="col text-center text-muted small">
-        &copy; 2026 SoundProject. Все права защищены.
-      </div>
-    </div>
-  </div>
-</footer>
-
-<div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <form id="uploadForm" novalidate>
-        <div class="modal-header">
-          <h2 class="modal-title h5" id="uploadModalLabel">Загрузить трек</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+    <aside class="global-player" id="globalPlayer" aria-label="Плеер">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-6 col-md-3">
+                    <div class="player-title text-truncate" id="playerTitle">Выберите трек</div>
+                    <div class="small text-secondary text-truncate" id="playerArtist">SoundProject</div>
+                </div>
+                <div class="col-6 col-md-3 d-flex justify-content-end justify-content-md-start gap-1">
+                    <button class="btn" type="button" id="pPrev" aria-label="Предыдущий"><i class="bi bi-skip-start-fill fs-4"></i></button>
+                    <button class="btn" type="button" id="pToggle" aria-label="Играть или пауза"><i class="bi bi-play-fill fs-4"></i></button>
+                    <button class="btn" type="button" id="pNext" aria-label="Следующий"><i class="bi bi-skip-end-fill fs-4"></i></button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="range" class="form-range" id="pProgress" min="0" max="100" step="0.1" value="0" aria-label="Перемотка">
+                    <div class="player-time" id="pTime">0:00 / 0:00</div>
+                </div>
+                <div class="d-none d-md-flex col-md-2 align-items-center gap-2">
+                    <i class="bi bi-volume-up"></i>
+                    <input type="range" class="form-range" id="pVolume" min="0" max="100" value="80" aria-label="Громкость">
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="upTitle" class="form-label">Название</label>
-            <input type="text" class="form-control" id="upTitle" required minlength="2">
-          </div>
-          <div class="mb-3">
-            <label for="upArtist" class="form-label">Артист</label>
-            <input type="text" class="form-control" id="upArtist" required>
-          </div>
-          <div class="mb-3">
-            <label for="upGenre" class="form-label">Жанр</label>
-            <select class="form-select" id="upGenre" required>
-              <option value="" selected disabled>Выберите жанр</option>
-              <option>Electronic</option><option>Lo-Fi</option><option>Hip-Hop</option>
-              <option>Pop</option><option>Rock</option><option>Ambient</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="upAudio" class="form-label">Аудиофайл</label>
-            <input type="file" class="form-control" id="upAudio" accept="audio/*" required>
-          </div>
+    </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                form.classList.add('was-validated');
+                if (!form.checkValidity()) return;
+                document.getElementById('contactOk').classList.remove('d-none');
+                form.reset();
+                form.classList.remove('was-validated');
+            });
+        });
+    </script>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h5>Platform</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="catalog.html">Musixmatch Pro</a></li>
+                        <li><a href="catalog.html">Catalog Intelligence</a></li>
+                        <li><a href="catalog.html">Royalties</a></li>
+                        <li><a href="catalog.html">Sentinel</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Developers</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4 opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start text-muted small">
+                    &copy; 2026 SoundProject. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="text-danger fw-bold"><i class="bi bi-soundwave"></i> SoundProject</span>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
-          <button type="submit" class="btn btn-accent">Опубликовать</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:1090">
-  <div id="appToast" class="toast text-bg-dark" role="status" aria-live="polite" aria-atomic="true">
-    <div class="toast-body"></div>
-  </div>
-</div>
-
-<aside class="global-player" id="globalPlayer" aria-label="Плеер">
-  <div class="container">
-    <div class="row align-items-center g-3">
-      <div class="col-6 col-md-3">
-        <div class="player-title text-truncate" id="playerTitle">Выберите трек</div>
-        <div class="small text-secondary text-truncate" id="playerArtist">SoundProject</div>
-      </div>
-      <div class="col-6 col-md-3 d-flex justify-content-end justify-content-md-start gap-1">
-        <button class="btn" type="button" id="pPrev" aria-label="Предыдущий"><i class="bi bi-skip-start-fill fs-4"></i></button>
-        <button class="btn" type="button" id="pToggle" aria-label="Играть или пауза"><i class="bi bi-play-fill fs-4"></i></button>
-        <button class="btn" type="button" id="pNext" aria-label="Следующий"><i class="bi bi-skip-end-fill fs-4"></i></button>
-      </div>
-      <div class="col-12 col-md-4">
-        <input type="range" class="form-range" id="pProgress" min="0" max="100" step="0.1" value="0" aria-label="Перемотка">
-        <div class="player-time" id="pTime">0:00 / 0:00</div>
-      </div>
-      <div class="d-none d-md-flex col-md-2 align-items-center gap-2">
-        <i class="bi bi-volume-up"></i>
-        <input type="range" class="form-range" id="pVolume" min="0" max="100" value="80" aria-label="Громкость">
-      </div>
-    </div>
-  </div>
-</aside>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/app.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      form.classList.add('was-validated');
-      if (!form.checkValidity()) return;
-      document.getElementById('contactOk').classList.remove('d-none');
-      form.reset();
-      form.classList.remove('was-validated');
-    });
-  });
-</script>
+    </footer>
 </body>
 </html>
